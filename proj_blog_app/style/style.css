@@ -45,10 +45,85 @@ header {
   background-size: cover;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.main-container {
+  /*background-color: tomato;*/
+  max-width: 750px;
+  min-width: 600px;
+  width: 100%;
+  padding: 0px 16px 24px 16px;
+}
+
+.post {
+  display: flex;
+  border: 1px solid #eaecee;
+  border-radius: 8px;
+  min-height: 200px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.post:hover {
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  /*background-color: yellow;*/
+  flex-basis: 40%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/proj_blog_app/assets/banner.jpeg);
+}
+
+.post-content {
+  /*background-color: teal;*/
+  flex-basis: 60%;
+  padding: 24px;
+  flex-shrink: 1;
+}
+
+.post-date {
+  color: #adb5bd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.post-title {
+  font-size: 1.5em;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  color: #333;
+}
+
+.post-title h4 {
+  margin: 0;
+}
+
+.post-text {
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.post-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #495057;
+  margin: 0;
+  word-break: break-all;
+}
+
 footer {
   min-height: 100px;
-  background-color: teal;
-  color: thistle;
+  background-color: #eaecee70;
+  color: #929eaa;
   display: flex;
   justify-content: center;
   align-items: center;
